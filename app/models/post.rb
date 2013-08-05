@@ -1,4 +1,6 @@
 # encoding: utf-8
+#include ActiveModel::ForbiddenAttributesProtection
+
 class Post < ActiveRecord::Base
   has_many :comments
   attr_accessible :text, :title
